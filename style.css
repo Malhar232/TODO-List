@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden;
+    max-height: 100vh;
+    background: #D38312;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+font-family: 'Poppins',sans-serif;
+}
+.notvisible{
+  opacity: 0;
+  animation: hide 1s forwards;
+}
+@keyframes hide{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+option{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 100;
+}
+
+form{
+    margin-top: 50px;
+ 
+}
+
+h3{
+  color: wheat;
+ 
+    margin-top: 10px;
+}
+#randomquote{
+    margin-top: 50px;
+    overflow: hidden;
+    font-style: italic;
+    font-weight: lighter;
+    color: wheat;
+}
+.input-field input:focus + label {
+    color: white !important;
+  }
+  /* label underline focus color */
+  .row .input-field input:focus {
+    border-bottom: 1px solid wheat !important;
+    box-shadow: 0 1px 0 0 wheat !important
+  }
+  .row .input-field input {
+    border-bottom: 1px solid  black !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    box-shadow: 0 1px 0 0  black !important;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+
+  .input-field input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  .input-field input:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: wheat;
+    opacity: 1; /* Firefox */
+    transition: color .5s ease-in-out;
+  }
+  
+
+  .input-field input { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: wheat;
+    padding-left: 100px;
+    opacity: 1; /* Firefox */
+  }
+ 
+ .pongya{
+    animation: malhar 1.5s forwards ease-in;
+  
+ }
+  
+  .todo-itemz{
+      float: left;
+      
+     
+
+  }
+  ul li .outer .buttons{
+      float: right;
+
+  }
+  .scratch{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+  }
+  @keyframes malhar{
+    20% {
+      opacity: 1;
+      transform: translate3d(-20px, 0, 0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(2000px, 0, 0);
+    }
+  }
+  @keyframes malharmob{
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  @media (min-width:700px){
+      ul{
+          margin-left: 10%;
+      }
+  }
+  .donebut,.delbut{
+      border: none;
+      margin-left: 10px;
+  
+      
+  }
+  @media(max-width:620px){
+    body{
+      overflow-x: hidden;
+    }
+    
+ 
+  }
+  .outer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+.outer li{
+  flex: 1;
+}

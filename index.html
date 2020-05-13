@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="icon" type="icon/image-x" href="./assets/todo.png">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body onload="randquote()">
+    <div class="container">
+        <h3 class="center" style="margin-top: 50px;">Quarantine TODO List</h3>
+        <div class="center" id="randomquote"></div>
+        <div class="row center ">
+            <form>
+                <div class="input-field col s10 m10 l10" >   
+                <input type="text" placeholder="Enter the TODO" id="thetodo" required>
+                </div>
+              
+                <div class="col s2 m2 l2  ">
+                  <button type="submit" class="btn-floating btn-large waves-effect waves-light black pulse" id="sub-btn"><i class="material-icons">add</i></button>  
+                </div>
+<!-- <div class="centerize">
+    <select class="col m6 s12 l6 left browser-default left selection" style="background: wheat;border:wheat;font-family: 'Poppins',sans-serif;
+    font-weight: 100;" onclick="hhr()" >
+        <option value="All" selected class="col m2 s4 l2 left " style="background: transparent;">All</option>
+        <option value="Completed" class="col m2 s4 l2 left " style="background: transparent;">Completed</option>
+        <option value="Pending" class="col m2 s4 l2 left" style="background: transparent;">Pending</option>
+        <option value="Removed" class="col m2 s4 l2 left "style="background: transparent;">Removed</option>
+      </select>
+
+</div> -->
+            </form>
+            
+        </div>
+     
+      
+
+        <div class="row " id="listtodos">
+            <ul class="col s12 m8 l10 " id="thelist">
+              
+            </ul>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
